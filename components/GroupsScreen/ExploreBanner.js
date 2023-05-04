@@ -15,7 +15,7 @@ export default function SettingsScreen(){
                     Discover now clubs and quickly find your favorites
                 </Text>
            </View>
-           <IonIcon name="chevron-forward-outline" style={styles.icon}/>
+           <IonIcon name="chevron-forward-outline" style={styles.icon} color = {'gray'}/>
 
         </View>
         </TouchableWithoutFeedback>

@@ -30,11 +30,21 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        backgroundColor:'#E7E9E8',
+        backgroundColor:'#F5F5F5',
+        borderBottomWidth:1,
+        borderBottomColor:"#D3D3D3",
+        height:60
+        
     },
     buttonContainer:{
-        height: 60,
+        height: 35,
+        width:131,
         justifyContent: 'center',
+        alignItems: 'center',
+        borderRightWidth: 1,
+        borderRightColor: "#D3D3D3",
+        
+
         
     },
     button:{
@@ -45,6 +55,6 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     icon:{
-        fontSize:35
+        fontSize:25
     }
 })

@@ -3,18 +3,14 @@ import { View, Text, TouchableOpacity, StyleSheet, FlatList, SafeAreaView, Image
 import clubs from '../../data/Clubs';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 
-export default function ClubsList(){
+export default function ClubsList({thing}){
     return(
         <View style={styles.container} >
-            <View style ={styles.titleContainer}>
-                <IonIcon name="nuclear-outline" style={styles.icon}/>
-                <Text style={styles.popularText}>Popular Clubs Near You</Text>
-
-            </View>
+            
            <FlatList
             numColumns={2}
                 keyExtractor={(item) => item.id}
-                data = {clubs}
+                data = {thing}
                 renderItem={({ item })=> (
                     <View style={styles.card}>
                         <Image
@@ -41,21 +37,10 @@ profilePicSize=60;
 
 const styles = StyleSheet.create({
     container:{
-        flex:1
+        flex:1,
+        margin:10
     },
-    titleContainer:{
-        flexDirection:'row'
-    },
-    icon:{
-        margin:18,
-        fontSize: 20,
-        fontWeight:'bold'
-    },
-    popularText:{
-        marginVertical:15,
-        fontSize:20,
-        fontWeight:'bold'
-    },
+
     card:{
         backgroundColor:'white',
         margin:3,

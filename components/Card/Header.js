@@ -49,7 +49,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     info:{
-        flexDirection:'row'
+        flexDirection:'row',
+        marginTop:5
     },
     activityInfo:{
         fontSize: 10

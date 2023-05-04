@@ -1,6 +1,6 @@
 const clubs = [
     {
-        name:'MEC London', 
+        name:'MECS London', 
         icon: 'pulse-outline',
         location:'London, Ontario, Canada',
         athleteNum:1700,
