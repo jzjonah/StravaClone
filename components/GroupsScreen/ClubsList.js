@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, FlatList, SafeAreaView, Image } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, FlatList, SectionList, Image } from 'react-native';
 import clubs from '../../data/Clubs';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 

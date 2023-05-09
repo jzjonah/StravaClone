@@ -5,8 +5,10 @@ import clubs from '../../data/Clubs';
 import ChallengesSelector from '../../components/GroupsScreen/ChallengesSelector';
 import PastChallenges from '../../components/GroupsScreen/PastChallenges';
 import IonIcon from 'react-native-vector-icons/Ionicons';
+import MainChallenge from '../../components/GroupsScreen/MainChallenge';
 
-export default function ClubsScreen(){
+
+export default function ChallengesScreen(){
   return(
       <View style={styles.container}>
         <ChallengesSelector/>
@@ -16,6 +18,7 @@ export default function ClubsScreen(){
               source={require('../../assets/bikers.png')}
               style={styles.bannerImage}
               />
+          <MainChallenge/>
           <View style ={styles.titleContainer}>
                 <IonIcon name="person-circle" style={styles.icon}/>
                 <View style = {styles.textContainer}>
